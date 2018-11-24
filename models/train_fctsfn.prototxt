@@ -26,6 +26,7 @@ layer {
     pad: 100
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -33,6 +34,9 @@ layer {
   type: "ReLU"
   bottom: "conv1_1"
   top: "conv1_1"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "conv1_2"
@@ -50,6 +54,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -57,6 +62,9 @@ layer {
   type: "ReLU"
   bottom: "conv1_2"
   top: "conv1_2"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "pool1"
@@ -85,6 +93,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -92,6 +101,9 @@ layer {
   type: "ReLU"
   bottom: "conv2_1"
   top: "conv2_1"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "conv2_2"
@@ -109,6 +121,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -116,6 +129,9 @@ layer {
   type: "ReLU"
   bottom: "conv2_2"
   top: "conv2_2"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "pool2"
@@ -144,6 +160,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -151,6 +168,9 @@ layer {
   type: "ReLU"
   bottom: "conv3_1"
   top: "conv3_1"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "conv3_2"
@@ -168,6 +188,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -175,6 +196,9 @@ layer {
   type: "ReLU"
   bottom: "conv3_2"
   top: "conv3_2"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "conv3_3"
@@ -192,6 +216,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -199,6 +224,9 @@ layer {
   type: "ReLU"
   bottom: "conv3_3"
   top: "conv3_3"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "pool3"
@@ -227,6 +255,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -234,6 +263,9 @@ layer {
   type: "ReLU"
   bottom: "conv4_1"
   top: "conv4_1"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "conv4_2"
@@ -251,6 +283,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -258,6 +291,9 @@ layer {
   type: "ReLU"
   bottom: "conv4_2"
   top: "conv4_2"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "conv4_3"
@@ -275,6 +311,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -282,6 +319,9 @@ layer {
   type: "ReLU"
   bottom: "conv4_3"
   top: "conv4_3"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "pool4"
@@ -310,6 +350,7 @@ layer {
     pad: 100
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -317,6 +358,9 @@ layer {
   type: "ReLU"
   bottom: "conv1_1_fea"
   top: "conv1_1_fea"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "conv1_2_fea"
@@ -334,6 +378,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -341,6 +386,9 @@ layer {
   type: "ReLU"
   bottom: "conv1_2_fea"
   top: "conv1_2_fea"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "pool1_fea"
@@ -369,6 +417,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -376,6 +425,9 @@ layer {
   type: "ReLU"
   bottom: "conv2_1_fea"
   top: "conv2_1_fea"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "conv2_2_fea"
@@ -393,6 +445,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -400,6 +453,9 @@ layer {
   type: "ReLU"
   bottom: "conv2_2_fea"
   top: "conv2_2_fea"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "pool2_fea"
@@ -428,6 +484,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -435,6 +492,9 @@ layer {
   type: "ReLU"
   bottom: "conv3_1_fea"
   top: "conv3_1_fea"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "conv3_2_fea"
@@ -452,6 +512,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -459,6 +520,9 @@ layer {
   type: "ReLU"
   bottom: "conv3_2_fea"
   top: "conv3_2_fea"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "conv3_3_fea"
@@ -476,6 +540,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -483,6 +548,9 @@ layer {
   type: "ReLU"
   bottom: "conv3_3_fea"
   top: "conv3_3_fea"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "pool3_fea"
@@ -511,6 +579,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -518,6 +587,9 @@ layer {
   type: "ReLU"
   bottom: "conv4_1_fea"
   top: "conv4_1_fea"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "conv4_2_fea"
@@ -535,6 +607,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -542,6 +615,9 @@ layer {
   type: "ReLU"
   bottom: "conv4_2_fea"
   top: "conv4_2_fea"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "conv4_3_fea"
@@ -559,6 +635,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -566,6 +643,9 @@ layer {
   type: "ReLU"
   bottom: "conv4_3_fea"
   top: "conv4_3_fea"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "pool4_fea"
@@ -601,6 +681,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -608,6 +689,9 @@ layer {
   type: "ReLU"
   bottom: "conv5_1"
   top: "conv5_1"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "conv5_2"
@@ -625,6 +709,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -632,6 +717,9 @@ layer {
   type: "ReLU"
   bottom: "conv5_2"
   top: "conv5_2"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "conv5_3"
@@ -649,6 +737,7 @@ layer {
     pad: 1
     kernel_size: 3
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -656,6 +745,9 @@ layer {
   type: "ReLU"
   bottom: "conv5_3"
   top: "conv5_3"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "pool5"
@@ -684,6 +776,7 @@ layer {
     pad: 0
     kernel_size: 7
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -691,6 +784,9 @@ layer {
   type: "ReLU"
   bottom: "fc6-conv"
   top: "fc6-conv"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "drop6"
@@ -717,6 +813,7 @@ layer {
     pad: 0
     kernel_size: 1
     stride: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -724,6 +821,9 @@ layer {
   type: "ReLU"
   bottom: "fc7-conv"
   top: "fc7-conv"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "drop7"
@@ -749,6 +849,7 @@ layer {
     num_output: 2
     pad: 0
     kernel_size: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -764,6 +865,7 @@ layer {
     bias_term: false
     kernel_size: 4
     stride: 2
+    engine: CAFFE
   }
 }
 layer {
@@ -781,6 +883,7 @@ layer {
     num_output: 2
     pad: 0
     kernel_size: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -817,6 +920,7 @@ layer {
     bias_term: false
     kernel_size: 4
     stride: 2
+    engine: CAFFE
   }
 }
 layer {
@@ -841,6 +945,7 @@ layer {
     num_output: 2
     pad: 0
     kernel_size: 1
+    engine: CAFFE
   }
 }
 layer {
@@ -877,6 +982,7 @@ layer {
     bias_term: false
     kernel_size: 16
     stride: 8
+    engine: CAFFE
   }
 }
 layer {
@@ -915,6 +1021,7 @@ layer {
     weight_filler {
       type: "msra"
     }
+    engine: CAFFE
   }
 }
 layer {
@@ -960,6 +1067,9 @@ layer {
   type: "ReLU"
   bottom: "conv_btnk_bn_fea_comb_1"
   top: "conv_btnk_bn_fea_comb_1"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "fea_comb_1_c"
@@ -997,6 +1107,7 @@ layer {
     weight_filler {
       type: "msra"
     }
+    engine: CAFFE
   }
 }
 layer {
@@ -1042,6 +1153,9 @@ layer {
   type: "ReLU"
   bottom: "conv_btnk_bn_fea_comb_2"
   top: "conv_btnk_bn_fea_comb_2"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "fea_comb_2_up"
@@ -1056,6 +1170,7 @@ layer {
     bias_term: false
     kernel_size: 4
     stride: 2
+    engine: CAFFE
   }
 }
 layer {
@@ -1094,6 +1209,7 @@ layer {
     weight_filler {
       type: "msra"
     }
+    engine: CAFFE
   }
 }
 layer {
@@ -1139,6 +1255,9 @@ layer {
   type: "ReLU"
   bottom: "conv_btnk_bn_fea_comb_3"
   top: "conv_btnk_bn_fea_comb_3"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "fea_comb_3_up"
@@ -1153,6 +1272,7 @@ layer {
     bias_term: false
     kernel_size: 8
     stride: 4
+    engine: CAFFE
   }
 }
 layer {
@@ -1191,6 +1311,7 @@ layer {
     weight_filler {
       type: "msra"
     }
+    engine: CAFFE
   }
 }
 layer {
@@ -1236,6 +1357,9 @@ layer {
   type: "ReLU"
   bottom: "conv_btnk_bn_fea_comb_4"
   top: "conv_btnk_bn_fea_comb_4"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "fea_comb_4_up"
@@ -1250,6 +1374,7 @@ layer {
     bias_term: false
     kernel_size: 16
     stride: 8
+    engine: CAFFE
   }
 }
 layer {
@@ -1281,6 +1406,7 @@ layer {
     weight_filler {
       type: "msra"
     }
+    engine: CAFFE
   }
 }
 layer {
@@ -1326,6 +1452,9 @@ layer {
   type: "ReLU"
   bottom: "conv_btnk_bn_fea_comb_5"
   top: "conv_btnk_bn_fea_comb_5"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "fea_comb_5_up"
@@ -1340,6 +1469,7 @@ layer {
     bias_term: false
     kernel_size: 32
     stride: 16
+    engine: CAFFE
   }
 }
 layer {
@@ -1421,6 +1551,7 @@ layer {
     weight_filler {
       type: "msra"
     }
+    engine: CAFFE
   }
 }
 layer {
@@ -1466,6 +1597,9 @@ layer {
   type: "ReLU"
   bottom: "conv_fea_all_comb_bn_1"
   top: "conv_fea_all_comb_bn_1"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "drop_fea_all_comb_1"
@@ -1494,6 +1628,7 @@ layer {
     weight_filler {
       type: "msra"
     }
+    engine: CAFFE
   }
 }
 layer {
@@ -1539,6 +1674,9 @@ layer {
   type: "ReLU"
   bottom: "conv_fea_all_comb_bn_2"
   top: "conv_fea_all_comb_bn_2"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "drop_fea_all_comb_2"
@@ -1567,6 +1705,7 @@ layer {
     weight_filler {
       type: "msra"
     }
+    engine: CAFFE
   }
 }
 layer {
@@ -1612,6 +1751,9 @@ layer {
   type: "ReLU"
   bottom: "conv_fea_all_comb_bn_3"
   top: "conv_fea_all_comb_bn_3"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "drop_fea_all_comb_3"
@@ -1640,6 +1782,7 @@ layer {
     weight_filler {
       type: "msra"
     }
+    engine: CAFFE
   }
 }
 layer {
@@ -1685,6 +1828,9 @@ layer {
   type: "ReLU"
   bottom: "conv_fea_all_comb_bn_4"
   top: "conv_fea_all_comb_bn_4"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "drop_fea_all_comb_4"
@@ -1713,6 +1859,7 @@ layer {
     weight_filler {
       type: "msra"
     }
+    engine: CAFFE
   }
 }
 layer {
@@ -1758,6 +1905,9 @@ layer {
   type: "ReLU"
   bottom: "conv_fea_all_comb_bn_5"
   top: "conv_fea_all_comb_bn_5"
+  relu_param {
+    engine: CAFFE
+  }
 }
 layer {
   name: "drop_fea_all_comb_5"
@@ -1791,6 +1941,7 @@ layer {
     bias_filler {
       type: "constant"
     }
+    engine: CAFFE
   }
 }
 layer {
@@ -1801,5 +1952,8 @@ layer {
   top: "loss"
   loss_param {
     normalize: false
+  }
+  softmax_param {
+    engine: CAFFE
   }
 }
