@@ -18,9 +18,9 @@ except:
 weights = './pretrained_weights/tslfn_8s/train_iter_950000.caffemodel'
 
 # init
-#caffe.set_mode_gpu()
+caffe.set_mode_gpu()
 caffe.set_device(1)
-caffe.set_mode_cpu()
+#caffe.set_mode_cpu()
 
 solver = caffe.SGDSolver('./solvers/solver_fctsfn.prototxt')
 solver.net.copy_from(weights)
