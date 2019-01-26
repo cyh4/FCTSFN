@@ -12,6 +12,8 @@ Run `run_example.py` on an example to use the model file and pre-trained weights
 
 ## Model training
 
+See `./data/example_data/voc` an example of the way to organize training data (note that this is not the full data; see above paper on more detailed information on the data used in the paper).
+
 Run `solve_32s.py`, `solve_16s.py`, `solve_8s.py` for the training of TSLFN subnet in FCTSFN from stride 32 to stride 8.
 
 Run `solve_fctsfn.py` for the training of MSRN subnet in FCTSFN.
